@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+}
+
+.page-title {
+  color: red;
+  text-align: center;
+  font-size: 2.8em;
+}
+
+.container {
+  max-width: 60%;
+
+  margin: 0 auto;
+  /* display: block; */
+  /* border: 30px dashed green; */
+  height: 100%;
+}
+
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  background-color: #1c1e1f;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 1em;
+  border: 1px solid #409cf5;
+}
+.card h2 {
+  color: #409cf5;
+}
+
+@media screen and (min-width: 1080px) {
+  html,
+  body {
+    background-color: lightgreen;
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  /* .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black 2px;
+    background: blue;
+    padding: 0;
+    margin: 0;
+  } */
+
+  .page-title {
+    font-size: 2.8em;
+    text-align: center;
+    color: red;
+    width: 100%;
+    height: 5%;
+    /* border: 30px dashed green; */
+    /* display: block; */
+  }
+
+  .container {
+    /* overflow: hidden; */
+    height: 100%;
+    /* border: 30px dashed green; */
+    width: 100%;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: pink;
+  }
+
+  .section-cards {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 30px dashed yellow; */
+
+    flex-direction: row;
+    /* flex-direction: auto; */
+    /* float: right; */
+  }
+
+  .card {
+    flex: 5%;
+    /* display: inline; */
+
+    /* height: 50px;  */
+    /* float: right; */
+  }
+}
