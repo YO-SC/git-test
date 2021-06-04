@@ -23,9 +23,12 @@ body {
 
 .section-cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
+  width: 30%;
+  flex-grow: 1;
   background-color: #1c1e1f;
   padding: 2em;
   margin: 1em;
@@ -34,4 +37,18 @@ body {
 }
 .card h2 {
   color: #409cf5;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: .5em;
+    margin: 0;
+  }
+
+   .card {
+      margin: 1em 1em;
+      width: 100%;
+   }
 }
